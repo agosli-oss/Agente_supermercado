@@ -1,0 +1,8 @@
+langchain
+langchain-cohere
+cohere
+faiss-cpu
+gradio
+numpy
+pandas
+python-dotenv
