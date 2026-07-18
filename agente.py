@@ -16,6 +16,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 COHERE_API_KEY  = os.environ.get("COHERE_API_KEY")
+AUTH_USER	= os.environ.get("AUTH_USER", "admin")
+AUTH_PASS	= os.environ.get("AUTH_PASS", "changeme")
 CSV_PATH        = os.environ.get("CSV_PATH", "archivo.csv")
 RUTA_EMBEDDINGS = os.environ.get("RUTA_EMBEDDINGS", "embeddings.npy")
 RUTA_INDEX      = os.environ.get("RUTA_INDEX", "index.faiss")
@@ -168,5 +170,6 @@ if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
         server_port=7860,
-        share=False
+        share=False,
+	auth=(AUTH_USER, AUTH_PASS)
     )
