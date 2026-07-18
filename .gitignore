@@ -1,5 +1,4 @@
 .env
-*.csv
 embeddings.npy
 index.faiss
 .ipynb_checkpoints/
