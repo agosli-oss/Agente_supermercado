@@ -88,7 +88,7 @@ docker run -d --name agente --restart unless-stopped -p 7860:7860 --env-file .en
 | `AUTH_USER` | Usuario para el acceso a la app |
 | `AUTH_PASS` | Contraseña para el acceso a la app |
 
-> ⚠️ El archivo `archivo.csv` no está incluido en el repositorio (excluido por `.gitignore`, ya que contiene datos del catálogo). Debe agregarse manualmente en el mismo directorio que `agente.py`.
+> El archivo `archivo.csv` con el catálogo de productos está incluido en la raíz del repositorio.
 
 ## Ejemplos de preguntas y respuestas
 
